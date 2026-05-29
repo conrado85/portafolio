@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio Profesional</title>
+    <!-- Vinculamos nuestro archivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabecera de la página -->
+    <header class="main-header">
+      <div class="logo">
+        <span>&lt;Conrado Gonzalez /&gt;</span>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <!-- Agregamos data-value para identificar qué traducir -->
+          <li>
+            <a href="#sobre-mi" data-section="nav" data-value="about"
+              >Sobre Mí</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos" data-section="nav" data-value="projects"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contacto"
+              class="btn-accent"
+              data-section="nav"
+              data-value="contact"
+              >Contacto</a
+            >
+          </li>
+
+          <!-- El selector de idioma -->
+          <li>
+            <select id="language-select" class="lang-picker">
+              <option value="es" selected>ES</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+      <!-- 1. Sobre Mí -->
+      <section id="sobre-mi" class="hero-section">
+        <div class="hero-content">
+          <span class="hero-subtitle" data-section="hero" data-value="subtitle"
+            >Hola, mi nombre es</span
+          >
+          <h1 class="hero-title" data-section="hero" data-value="title">
+            Conrado Gonzalez
+          </h1>
+          <h2 class="hero-slug" data-section="hero" data-value="slug">
+            Desarrollador Trainee / Full Stack
+          </h2>
+          <p class="hero-text" data-section="hero" data-value="description">
+            Apasionado por crear soluciones web eficientes y limpias.
+            Actualmente enfocado en dominar el desarrollo frontend y backend
+            para construir experiencias digitales increíbles.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="#proyectos"
+              class="btn-primary"
+              data-section="hero"
+              data-value="projects"
+              >Ver Proyectos</a
+            >
+            <a
+              href="#contacto"
+              class="btn-secondary"
+              data-section="hero"
+              data-value="contact"
+              >Hablemos</a
+            >
+          </div>
+        </div>
+        <div class="hero-profile">
+          <!-- Podés poner una foto tuya o un avatar temporal -->
+          <div class="profile-avatar">
+            <span>&lt;/&gt;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Proyectos -->
+
+      <section id="proyectos" class="projects-section">
+        <h2 class="section-title" data-section="projects" data-value="title">
+          Mis Proyectos<span>.</span>
+        </h2>
+
+        <div class="projects-grid">
+          <!-- Tarjeta 1 -->
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-icon">📁</div>
+              <h3
+                class="project-card-title"
+                data-section="projects"
+                data-value="title1"
+              >
+                E-Commerce App
+              </h3>
+              <p
+                class="project-card-text"
+                data-section="projects"
+                data-value="description1"
+              >
+                Una tienda online completa con carrito de compras, pasarela de
+                pago simulada y un panel de administración para gestionar stock.
+              </p>
+              <ul class="project-tech-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" class="proj-link"
+                  ><i class="code-icon">&lt;/&gt;</i> Código</a
+                >
+                <a href="#" target="_blank" class="proj-link btn-live"
+                  >✨ Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-icon">📁</div>
+              <h3
+                class="project-card-title"
+                data-section="projects"
+                data-value="title2"
+              >
+                Task Manager API
+              </h3>
+              <p
+                class="project-card-text"
+                data-section="projects"
+                data-value="description2"
+              >
+                API RESTful para la gestión de tareas diarias, con autenticación
+                de usuarios mediante JWT y documentación interactiva.
+              </p>
+              <ul class="project-tech-list">
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" class="proj-link"
+                  ><i class="code-icon">&lt;/&gt;</i> Código</a
+                >
+                <a href="#" target="_blank" class="proj-link btn-live"
+                  >✨ Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta  -->
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-icon">📁</div>
+              <h3
+                class="project-card-title"
+                data-section="projects"
+                data-value="title1"
+              >
+                E-Commerce App
+              </h3>
+              <p
+                class="project-card-text"
+                data-section="projects"
+                data-value="description1"
+              >
+                Una tienda online completa con carrito de compras, pasarela de
+                pago simulada y un panel de administración para gestionar stock.
+              </p>
+              <ul class="project-tech-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" class="proj-link"
+                  ><i class="code-icon">&lt;/&gt;</i> Código</a
+                >
+                <a href="#" target="_blank" class="proj-link btn-live"
+                  >✨ Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Contacto -->
+      <section id="contacto" class="contact-section">
+        <h2 class="section-title" data-section="contact" data-value="title">
+          Hablemos<span> .</span>
+        </h2>
+
+        <div class="contact-container">
+          <!-- Columna 1: Info y Redes -->
+          <div class="contact-info">
+            <h3 data-section="contact" data-value="question">
+              ¿Tenés un proyecto en mente?
+            </h3>
+            <p data-section="contact" data-value="description">
+              Actualmente estoy disponible para tomar nuevos desafíos, proyectos
+              freelance o puestos Full-Time / Trainee. Si tenés alguna pregunta
+              o simplemente querés saludar, ¡escribime!
+            </p>
+            <div class="contact-links">
+              <a href="mailto:conry.203@gmail.com" class="contact-item">
+                <span>📧</span> conry.203@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/conrado-carlos-alberto-gonzalez/"
+                target="_blank"
+                class="contact-item"
+              >
+                <span>💼</span> LinkedIn
+              </a>
+              <a
+                href="https://github.com/conrado85"
+                target="_blank"
+                class="contact-item"
+              >
+                <span>🐙</span> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Formulario de Contacto -->
+
+          <div
+            data-fs-success
+            class="form-status-msg success"
+            data-section="form"
+            data-value="successMsg"
+          >
+            ¡Mensaje enviado con éxito! Te responderé pronto. 💚
+          </div>
+          <div
+            data-fs-error
+            class="form-status-msg error"
+            data-section="form"
+            data-value="errorMsg"
+          >
+            Ups... Hubo un problema al enviar. Intentá de nuevo.
+          </div>
+
+          <form id="portfolio-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" data-section="form" data-value="labelName"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                data-fs-field
+                data-section="form"
+                data-value="placeName"
+                data-type="placeholder"
+                placeholder="Tu nombre"
+              />
+              <span class="field-error" data-fs-error="name"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-section="form" data-value="labelEmail"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                data-fs-field
+                data-section="form"
+                data-value="placeEmail"
+                data-type="placeholder"
+                placeholder="tu@correo.com"
+              />
+              <span class="field-error" data-fs-error="email"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-section="form" data-value="labelMessage"
+                >Mensaje</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                data-fs-field
+                data-section="form"
+                data-value="placeMessage"
+                data-type="placeholder"
+                placeholder="Hola, me gustaría hablar contigo sobre..."
+              ></textarea>
+              <span class="field-error" data-fs-error="message"></span>
+            </div>
+
+            <button
+              type="submit"
+              data-fs-submit-btn
+              class="btn-submit"
+              data-section="form"
+              data-value="btnSubmit"
+            >
+              Enviar Mensaje
+            </button>
+          </form>
+
+          <script>
+            window.formspree =
+              window.formspree ||
+              function () {
+                (formspree.q = formspree.q || []).push(arguments);
+              };
+            formspree("initForm", {
+              formElement: "#portfolio-form",
+              formId: "movpokjp",
+            });
+          </script>
+          <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+        </div>
+      </section>
+
+      <!-- Footer simple para cerrar la página -->
+      <footer class="main-footer">
+        <div class="footer-container">
+          <p>
+            &lt;Conrado Gonzalez /&gt; &copy; 2026 | Desarrollado con pasión.
+          </p>
+          <a href="#" class="scroll-to-top">Volver arriba ↑</a>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
