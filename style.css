@@ -227,7 +227,8 @@ a {
 .projects-grid {
     display: grid;
     /* Crea columnas de mínimo 300px que llenan el espacio disponible automáticamente */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem; /* Espacio entre tarjetas */
 }
 
@@ -552,12 +553,16 @@ a {
         width: 200px; /* Imagen un poco más chica en móviles */
         height: 200px;
     }
+    
 
     /* 3. Ajustes en Proyectos y Contacto */
     .projects-section,
     .contact-section {
         padding: 4rem 5%; /* Menos margen lateral para aprovechar la pantalla */
     }
+    .projects-grid {   
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+}
 
     .contact-container {
         gap: 2.5rem;
